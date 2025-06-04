@@ -8,34 +8,34 @@ def calculate(input_list):
 
     calculations = {
         'mean': [
-            arr.mean(axis=0).tolist(),    # column-wise mean
-            arr.mean(axis=1).tolist(),    # row-wise mean
-            arr.mean().item()             # overall mean
+            arr.mean(axis=0).tolist(),    # axis1 mean
+            arr.mean(axis=1).tolist(),    # axis2 mean
+            arr.mean().item()             # flattened mean
         ],
         'variance': [
-            arr.var(axis=0).tolist(),    # column-wise variance
-            arr.var(axis=1).tolist(),    # row-wise variance
-            arr.var().item()             # overall variance
+            arr.var(axis=0).tolist(),    # axis1 variance
+            arr.var(axis=1).tolist(),    # axis2 variance
+            arr.var().item()             # flattened variance
         ],
         'standard deviation': [
-            arr.std(axis=0).tolist(),    # column-wise std
-            arr.std(axis=1).tolist(),    # row-wise std
-            arr.std().item()             # overall std
+            arr.std(axis=0).tolist(),    # axis1 std
+            arr.std(axis=1).tolist(),    # axis2 std
+            arr.std().item()             # flattened std
         ],
         'max': [
-            arr.max(axis=0).tolist(),    # column-wise max
-            arr.max(axis=1).tolist(),    # row-wise max
-            arr.max().item()             # overall max
+            arr.max(axis=0).tolist(),    # axis1 max
+            arr.max(axis=1).tolist(),    # axis2 max
+            arr.max().item()             # flattened max
         ],
         'min': [
-            arr.min(axis=0).tolist(),    # column-wise min
-            arr.min(axis=1).tolist(),    # row-wise min
-            arr.min().item()             # overall min
+            arr.min(axis=0).tolist(),    # axis1 min
+            arr.min(axis=1).tolist(),    # axis2 min
+            arr.min().item()             # flattened min
         ],
         'sum': [
-            arr.sum(axis=0).tolist(),    # column-wise sum
-            arr.sum(axis=1).tolist(),    # row-wise sum
-            arr.sum().item()             # overall sum
+            arr.sum(axis=0).tolist(),    # axis1 sum
+            arr.sum(axis=1).tolist(),    # axis2 sum
+            arr.sum().item()             # flattened sum
         ]
     }
 
